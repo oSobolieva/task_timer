@@ -1,0 +1,94 @@
+
+input{
+    border: none;
+    border-bottom: 1px solid rgb(198, 194, 194);
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 1rem;
+    color: rgb(38, 38, 226);
+}
+
+input::placeholder{
+    color: rgb(38, 38, 226);
+}
+
+input:focus{
+    outline: none;
+}
+
+.timer_button{
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(195, 195, 195, 0.7);
+    font-size: .7rem;
+    color: rgb(38, 38, 226);
+    padding: .5rem .6rem .4rem .7rem;
+    transition: all .5s;
+}
+
+.timer_button:hover{
+    font-size: .8rem;
+}
+
+.timer_container{
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 8px rgba(135, 135, 135, 0.7);
+}
+
+.timer_container p {
+    color: rgb(38, 38, 226);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.menu_container{
+    width: 90%;
+    margin: 1rem auto 0rem auto;
+}
+
+.menu_container a{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    background-color: #00d6f3;
+    color: white;
+    border: none;
+    padding: .7rem 0;
+    font-size: .75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu_container a:hover{
+    background-color: #00cde8;
+}
+
+.menu_button_checked::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid #e2264f;
+}
+
+@media screen and (width < 839px){
+    .menu_container a {
+        display: block;
+        width: 100%;
+        margin-bottom: .3rem;
+    }
+
+    .timer_button{
+        font-size: .9rem;
+        padding: .7rem .8rem .6rem .9rem;
+    }
+}

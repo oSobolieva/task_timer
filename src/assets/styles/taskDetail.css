@@ -1,0 +1,38 @@
+
+
+.detail_home_button{
+    position: absolute;
+    left: 2%;
+    top: 2rem;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(38, 38, 226);
+}
+
+.detail_header{
+    margin: 2rem auto;
+}
+
+.detail_header h1{
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(38, 38, 226);
+}
+
+.detail_header p{
+    margin: 0;
+    color: #d1cece;
+    font-size: .7rem;
+}
+
+.detail_info p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.detail_info span{
+    text-decoration: underline;
+    color: rgb(38, 38, 226);
+}

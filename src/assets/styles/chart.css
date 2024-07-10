@@ -1,0 +1,23 @@
+
+
+.chart_tip {
+    background-color: white;
+    border: 1px solid rgba(135, 135, 135, 0.7);
+    color: #2626E2;
+    padding: 0.3rem;
+    font-size: 0.85rem;
+}
+
+.recharts-legend-item-text{
+    color: black !important;
+    font-family: serif;
+}
+
+.generate_btn {
+    position: relative;
+    left: 50%;
+    background-color: #00d6f3;
+    color: white;
+    border: none;
+    padding: .4rem 1rem;
+}

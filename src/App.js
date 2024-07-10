@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import TaskContextProvider from './contexts/TasksContext';
+import HomePage from './components/HomePage'
+import TaskTable from './components/TaskTable';
+import TaskChart from './components/TaskChart';
+import TaskDetailPage from './components/TaskDetailPage';
+import ErrorPage from './components/ErrorPage';
+
+const router = createBrowserRouter([
+  {
+    path: '/', element: <HomePage />, errorElement: <ErrorPage/>,
+    children: [
+      { path: '/log', element: <TaskTable /> },
+      { path: '/chart', element: <TaskChart /> }
+    ]
+  },
+  {
+    path: '/tasks/:ind', element: <TaskDetailPage />, errorElement: <ErrorPage/>
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <TaskContextProvider>
+        <RouterProvider router = {router} />
+      </TaskContextProvider>
+  )
 }
 
 export default App;

@@ -1,0 +1,57 @@
+
+table{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table thead tr{
+    border:none;
+    color: #9b9c96;
+    font-size: .65rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+table thead th,
+table tbody td{
+    padding: 1.2rem;
+}
+
+table tbody tr{
+    background-color: #eaf6ff;
+    color: rgb(38, 38, 226);
+    font-size: .65rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-top: 1px solid #d1cece;
+    border-bottom: 1px solid #d1cece;
+}
+
+table tbody button{
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(195, 195, 195, 0.7);
+    font-size: .7rem;
+    color: rgb(38, 38, 226);
+    padding: .5rem .6rem .4rem .7rem;
+    transition: all .5s;
+}
+
+table tbody a {
+    display: block;
+    width: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(195, 195, 195, 0.7);
+    font-size: .7rem;
+    font-weight: 200;
+    color: rgb(38, 38, 226);
+    padding: .5rem 0 .4rem 0;
+    transition: all .5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
