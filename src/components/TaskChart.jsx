@@ -20,7 +20,6 @@ export default function TaskChart() {
 
     function handlegenerateTasks() {
         taskContext.fillWithTasks(generateTasks());
-        //generateTasks();
     }
 
     return (
